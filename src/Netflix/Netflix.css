@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(10, 10, 10);
+}
+
+/* parent nav */
+.nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+   
+    position: fixed;
+    z-index: 2;
+  
+}
+
+.nav img{
+    height: 2.9rem;
+    width:7rem;
+    margin-top:-20px;
+    
+}
+
+/* navbar onscroll border */
+.navparent{
+    top: 10px;
+    background-color: rgba(5, 4, 4, 0.6);
+    width: 100%;
+    height: 4.5rem;
+    position:fixed;
+    transition: 0.3s ;
+    z-index: 1;
+}
+.nav-list a{
+   
+    text-decoration: none;
+   
+}
+.nav-list a:hover{
+    color: rgb(241, 51, 4);
+}
+
+.nav-list{
+    color: white;
+    list-style: none;
+    gap: 40px;
+    margin-left: 38rem;
+    text-decoration: none;
+}
+.nav-list a{
+    color: white;
+    font-size: 1.1rem;
+}
+/* banner content */
+.left-banner{
+    position: relative;
+    top: 20rem;
+    left:2.5rem;
+    line-height: 2.5rem;
+}
+.left-banner p{
+    width: 40rem;
+    height: 5rem;
+    text-overflow: ellipsis;
+    line-height: 1.3rem;
+}
+/* banner movie desc */
+.overview {
+
+    text-overflow: ellipsis;
+    /* overflow:hidden ; */
+   
+   
+}
+
+.btns{
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    line-height: 3rem;
+}
+.btns a button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.btns a button{
+    width:4rem;
+    height: 1.5rem;
+    /* color: rgba(red, green, blue, alpha) (0,0,0,0.5); */
+    opacity: 0.9;
+    border-radius: 5px;
+    border-color: transparent;
+    
+    
+}
+.banner{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.left-banner p,h1{
+    color: white;
+}
+
+/* rows */
+.row-container h2{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5px;
+    /* bottom: 10px; */
+    /* position: fixed; */
+}
+/* .row-container {
+   /* margin-top: 100px; } */
+   
+
+.item_image{
+    height: 330px;
+    width: 220px;
+    margin: 0.25rem;
+    margin-top: 20px;
+}
+/*first row  */
+.big{
+    height: 380px;
+    width: 270px;
+    margin: 0.25rem;
+    margin-top: 20px;
+}
+
+.images-container{
+    
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+}
+.images-container::-webkit-scrollbar{
+    display: none   ;
+}
+
+.images-container img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.images-container h2{
+    color: white;
+    margin-top: 30px;
+}
+
+
+/* utilites */
+.container{
+    margin-top: 2rem;
+    margin-inline: 40px;
+   
+}
+.flex{
+    display: flex;
+}
